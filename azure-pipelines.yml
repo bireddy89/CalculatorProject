@@ -32,11 +32,11 @@ stages:
       displayName: 'Install Dependencies'
 
     - script: |
-        py calculator.py
+        pyton calculator.py
       displayName: 'Run Calculator'
 
     - script: |
-        py -m unittest -v
+        python -m unittest -v
       displayName: 'Run Unit Tests'
 
     - task: PublishPipelineArtifact@1
