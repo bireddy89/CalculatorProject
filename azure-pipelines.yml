@@ -32,7 +32,7 @@ stages:
       displayName: 'Install Dependencies'
 
     - script: |
-        pyton calculator.py
+        python calculator.py
       displayName: 'Run Calculator'
 
     - script: |
