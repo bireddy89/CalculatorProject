@@ -28,7 +28,7 @@ stages:
 
     - script: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        echo "No external dependencies required"
       displayName: 'Install Dependencies'
 
     - script: |
