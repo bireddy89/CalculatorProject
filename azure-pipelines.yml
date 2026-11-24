@@ -32,8 +32,9 @@ stages:
       displayName: 'Install Dependencies'
 
     - script: |
-        python calculator.py
-      displayName: 'Run Calculator'
+    
+        python -c "from calculator import add, power, square_root; print('Advanced Calculator'); print('Addition:', add(10, 5)); print('Power:', power(2, 3)); print('Square Root:', square_root(25))"
+      displayName: 'Run Calculator Smoke Test'
 
     - script: |
         python -m unittest -v
